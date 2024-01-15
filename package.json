@@ -5,6 +5,9 @@
     "glob": "^7.2.0"
   },
   "devDependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^1.1.2",
+    "@matterlabs/hardhat-zksync-solc": "^1.0.6",
+    "@matterlabs/hardhat-zksync-verify": "^1.2.2",
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@types/node": "^20.11.1",

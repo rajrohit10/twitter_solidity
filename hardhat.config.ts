@@ -1,15 +1,15 @@
 import * as dotenv from "dotenv";
-import "@nomicfoundation/hardhat-toolbox";
-import "@nomicfoundation/hardhat-foundry";
-// import "@matterlabs/hardhat-zksync-deploy";
-// import "@matterlabs/hardhat-zksync-solc";
-// import "@matterlabs/hardhat-zksync-verify";
+// import "@nomicfoundation/hardhat-toolbox";
+// import "@nomicfoundation/hardhat-foundry";
+import "@matterlabs/hardhat-zksync-deploy";
+import "@matterlabs/hardhat-zksync-solc";
+import "@matterlabs/hardhat-zksync-verify";
 
 dotenv.config();
 
 
 module.exports ={
-    defaultNetwork: "sepolia",
+    defaultNetwork: "zksync",
     networks: {
         hardhat: {
         },
