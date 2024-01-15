@@ -36,6 +36,8 @@ To deploy on zkSync using Hardhat, follow these steps:
 
 ```bash
 npx hardhat run deploy/deploy.ts --network zksync
+
+yarn hard compile 
 ```
 
 2. Then, deploy using:
