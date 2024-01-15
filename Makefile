@@ -8,3 +8,5 @@ deploy-sepolia:
 deploy-zksync:
 	forge script script/DeploySinkDrain.s.sol:DeploySinkDrain --rpc-url $(ZKSYNC_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast  -vvvvv
 	
+deploy-hardhat-sepolia:
+ 	npx hardhat run script/DeployTwitter.js --network sepolia  	
