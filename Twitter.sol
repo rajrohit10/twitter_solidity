@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./node_modules/@openzeppelin/contracts/access/Ownable.sol";
 
 
 interface IProfile{
@@ -20,7 +20,7 @@ contract Twitter is Ownable{
     IProfile public profileContract;
 
         struct Tweet {
-        
+        uint256 id;
         address author;
         string content;
         uint256 timestamp;
@@ -37,7 +37,7 @@ contract Twitter is Ownable{
 
     
 
-    constructor(address _profileContractAddress){
+    constructor(address _profileContractAddress)  Ownable(msg.sender){
         profileContract=IProfile(_profileContractAddress);
     }
 
