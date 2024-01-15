@@ -1,6 +1,4 @@
-Certainly! Here's the entire content in one block that you can copy directly:
 
-```markdown
 # Solidity Twitter and Profiles Contracts
 
 ## Overview
