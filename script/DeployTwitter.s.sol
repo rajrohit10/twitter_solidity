@@ -2,8 +2,8 @@
 pragma solidity ^0.8.19;
 
 import {Script} from "forge-std/Script.sol";
-import {Twitter} from "./../Twitter.sol";
-import {Profile} from "./../Profile.sol";
+import {Twitter} from "./../contracts/Twitter.sol";
+import {Profile} from "./../contracts/Profile.sol";
 
 contract DeployTwitter is Script{
     function run() external {

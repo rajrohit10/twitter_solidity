@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
-// import "@nomicfoundation/hardhat-toolbox";
-// import "@nomicfoundation/hardhat-foundry";
+import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-foundry";
 // import "@matterlabs/hardhat-zksync-deploy";
 // import "@matterlabs/hardhat-zksync-solc";
 // import "@matterlabs/hardhat-zksync-verify";
@@ -8,8 +8,8 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 
-export default {
-    defaultNetwork: "zksync",
+module.exports ={
+    defaultNetwork: "sepolia",
     networks: {
         hardhat: {
         },
@@ -49,5 +49,9 @@ export default {
         compilerSource: 'binary',
         version: "latest",
         settings: {}
-    }
+    },
+    paths: {
+        artifacts: "./artifacts",
+      }
+
 }
